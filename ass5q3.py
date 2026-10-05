@@ -5,7 +5,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import roc_curve, roc_auc_score
 
-data = pd.read_csv("breast_cancer.csv")
+data = pd.read_csv("breastcancer.csv")
 
 data["diagnosis"] = data["diagnosis"].map({"M": 1, "B": 0})
 
